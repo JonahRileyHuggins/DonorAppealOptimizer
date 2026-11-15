@@ -1,0 +1,4 @@
+organization_external_id,organization_name,organization_email,organization_phone,organization_address,organization_city,organization_state,organization_zip_code,contact_first_name,contact_last_name,contact_work_email,amount,donation_date,payment_method,campaign,designation,description,custom donation field sponsorship
+LHOR-ORG-0001,Harborlight Civic Fund,gifts.harborlight@example.com,864-555-0101,120 Lantern Ave,Pickens,SC,29671,Ruth,Pell,ruth.pell@example.com,2500.00,2024-03-12,check,Annual Fund,General Support,LHOR-DON-0001 | spring grant,No
+LHOR-ORG-0001,Harborlight Civic Fund,gifts.harborlight@example.com,864-555-0101,120 Lantern Ave,Pickens,SC,29671,Ruth,Pell,ruth.pell@example.com,2500.00,2025-11-04,ach,Annual Fund,General Support,LHOR-DON-0002 | fall grant,No
+LHOR-ORG-0002,Red Clay Supply Co.,office.redclay@example.com,864-555-0102,80 Depot St,Walhalla,SC,29691,,,,500.00,2026-04-18,check,Spring Breakfast,Recovery Housing,LHOR-DON-0003 | breakfast table,Yes
