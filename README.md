@@ -14,27 +14,27 @@ Two primary features are used in calculating an optimized donor appeal request:
 * Total Year-To-Date donations
 * Median regional income
 
-Let \(G\) be the donor's gift total for the past 365 days, excluding sponsorship gifts. Let \(I\) be the median household income for the donor's ZIP code.
+Let $G$ be the donor's gift total for the past 365 days, excluding sponsorship gifts. Let $I$ be the median household income for the donor's ZIP code.
 
-\[
+$$
 k =
 \begin{cases}
-1 & \text{if } I \text{ is missing} \\[4pt]
+1 & \text{if } I \text{ is missing} \\
 \operatorname{clip}\!\left(\dfrac{I}{75000},\, 0.5,\, 2\right) & \text{otherwise}
 \end{cases}
-\]
+$$
 
-\[
+$$
 \operatorname{round}_{25}(x) = 25\left\lfloor \dfrac{x}{25} + \dfrac{1}{2} \right\rfloor
-\]
+$$
 
-\[
-\begin{align*}
-A_2 &= \max\!\left(25,\; \operatorname{round}_{25}(G \cdot k)\right) \\[4pt]
-A_1 &= \max\!\left(25,\; \operatorname{round}_{25}(0.5 \cdot A_2)\right) \\[4pt]
+$$
+\begin{aligned}
+A_2 &= \max\!\left(25,\; \operatorname{round}_{25}(G \cdot k)\right) \\
+A_1 &= \max\!\left(25,\; \operatorname{round}_{25}(0.5 \cdot A_2)\right) \\
 A_3 &= \max\!\left(25,\; \operatorname{round}_{25}(1.5 \cdot A_2)\right)
-\end{align*}
-\]
+\end{aligned}
+$$
 
 ## Contributions & Updates
 * The executable was generated with PyInstaller-v6.22.3 using the following command:
